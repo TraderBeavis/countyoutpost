@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "title": "DeWalt Table Saw",
+      "category": "Tools & Equipment",
+      "price": 300,
+      "zip": "32501",
+      "description": "Clean, lightly used. Includes fence and stand.",
+      "photos": [
+        "https://picsum.photos/seed/saw/960/540"
+      ],
+      "phone": "(850) 555-1234",
+      "email": "seller@example.com",
+      "status": "approved"
+    }
+  ]
+}

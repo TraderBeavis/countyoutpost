@@ -1,0 +1,70 @@
+backend:
+  name: git-gateway
+  branch: main
+publish_mode: editorial_workflow
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+collections:
+  - label: "Escambia Classifieds"
+    name: "escambia_classifieds"
+    format: "json"
+    extension: "json"
+    delete: true
+    editor: { preview: false }
+    files:
+      - label: "Classifieds (Escambia)"
+        name: "classifieds"
+        file: "data/fl/escambia/classifieds.json"
+        fields:
+          - {label: Items, name: items, widget: list, fields: [
+              {label: Title, name: title, widget: string},
+              {label: Category, name: category, widget: string},
+              {label: Price, name: price, widget: number, required: false},
+              {label: ZIP, name: zip, widget: string, required: false},
+              {label: Description, name: description, widget: text},
+              {label: Photos, name: photos, widget: list, required: false},
+              {label: Phone, name: phone, widget: string, required: false},
+              {label: Email, name: email, widget: string, required: false},
+              {label: Status, name: status, widget: select, options: ["draft","approved","sold"], default: "approved"}
+            ]}
+  - label: "Escambia Events"
+    name: "escambia_events"
+    format: "json"
+    extension: "json"
+    delete: true
+    editor: { preview: false }
+    files:
+      - label: "Events (Escambia)"
+        name: "events"
+        file: "data/fl/escambia/events.json"
+        fields:
+          - {label: Items, name: items, widget: list, fields: [
+              {label: Title, name: title, widget: string},
+              {label: When, name: when, widget: string},
+              {label: Venue, name: venue, widget: string, required: false},
+              {label: Address, name: address, widget: string, required: false},
+              {label: Link, name: url, widget: string, required: false},
+              {label: Contact, name: contact, widget: string, required: false},
+              {label: Status, name: status, widget: select, options: ["draft","approved","past"], default: "approved"}
+            ]}
+  - label: "Escambia Directory"
+    name: "escambia_directory"
+    format: "json"
+    extension: "json"
+    delete: true
+    editor: { preview: false }
+    files:
+      - label: "Businesses (Escambia)"
+        name: "businesses"
+        file: "data/fl/escambia/businesses.json"
+        fields:
+          - {label: Items, name: items, widget: list, fields: [
+              {label: Name, name: name, widget: string},
+              {label: Category, name: category, widget: string},
+              {label: Phone, name: phone, widget: string, required: false},
+              {label: Website, name: url, widget: string, required: false},
+              {label: Address, name: address, widget: string, required: false},
+              {label: Hours, name: hours, widget: string, required: false},
+              {label: About, name: about, widget: text, required: false},
+              {label: Status, name: status, widget: select, options: ["draft","approved"], default: "approved"}
+            ]}
