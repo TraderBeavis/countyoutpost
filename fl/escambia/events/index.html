@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Escambia Events — County Outpost</title>
+<link rel="stylesheet" href="/assets/styles.css"></head><body>
+<header class="site-header"><img class="logo" src="/assets/logo.png" alt="County Outpost logo"></header>
+<div class="wrap">
+  <nav class="crumbs"><a class="crumb" href="/">Home</a> › <a class="crumb" href="/fl/escambia/">Escambia</a> › Events</nav>
+  <h1>Happenings</h1>
+  <p class="small">Submit an event; we’ll approve before it goes live.</p>
+  <p><a class="pill" href="/admin/">Submit an event →</a></p>
+  <ul id="list" class="listings"></ul>
+</div>
+<script src="/assets/listing.js"></script>
+<script>loadJSON('/data/fl/escambia/events.json').then(d=>renderItems(d.items||[],'event'));</script>
+</body></html>

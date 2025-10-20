@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "title": "Pensacola Gun Show",
+      "when": "Sat\u2013Sun, Nov 2\u20133, 9\u20135",
+      "venue": "Fairgrounds",
+      "status": "approved"
+    },
+    {
+      "title": "Palafox Market",
+      "when": "Saturdays 9\u20131",
+      "venue": "Downtown",
+      "status": "approved"
+    }
+  ]
+}
