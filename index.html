@@ -10,17 +10,39 @@
 </header>
 <div class="wrap">
   <section class="hero">
-    <p>Welcome, select your state & county to see local Classifieds, Events, and the Directory.</p>
+    <h2>Welcome, select your state & county to see local Classifieds, Events, and the Directory.</h2>
     <p class="small">We’ll remember your location for next time.</p>
+
+    <!-- Location Picker (Centered) -->
+    <div class="location-picker">
+      <select id="stateSelect">
+        <option value="">Select State…</option>
+        <option value="fl">Florida</option>
+      </select>
+
+      <select id="countySelect" disabled>
+        <option value="">Select County…</option>
+      </select>
+
+      <button id="goBtn" disabled>Go</button>
+    </div>
   </section>
-  <div class="adgrid">
-    <div class="ad">Ad Slot 1</div>
-    <div class="ad">Ad Slot 2</div>
-    <div class="ad">Ad Slot 3</div>
-    <div class="ad">Ad Slot 4</div>
-  </div>
-  <hr style="margin:20px 0;border:none;border-top:1px solid #eee">
-  <p><a class="pill" href="/fl/escambia/">Go to Escambia, FL →</a></p>
+
+  <!-- Feature Cards -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>What is County Outpost?</h3>
+      <p>A county-first local marketplace for real people, real communities, and real small businesses.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>How It Works</h3>
+      <p>Select your county, browse local listings, post items, and connect with people near you.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Why It’s Different</h3>
+      <p>No national chains. No spam. Just a clean, local network built for your hometown.</p>
+    </div>
+  </section>
 </div>
-<footer><div class="wrap">© County Outpost All Rights Reserved 2025</div></footer>
-</body></html>
