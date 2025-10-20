@@ -1,4 +1,4 @@
-
+body { background:#fcfbf8; }
 /* CountyOutpost v7 */
 :root { --page-max: 1100px; --brand: #3a2515; --ink: #222; --muted: #666; }
 html, body { background:#fff; color:var(--ink); margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji"; line-height:1.5; }
