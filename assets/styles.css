@@ -18,3 +18,56 @@ header.site-header img.logo{ max-width:min(920px,92vw); height:auto; display:blo
 .adgrid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:10px; }
 .adgrid .ad{ min-height:120px; display:flex; align-items:center; justify-content:center; background:#faf7f3; border:1px dashed #cdb; border-radius:10px; color:#826; }
 footer{ border-top:1px solid #eee; padding:20px 12px; margin-top:20px; font-size:.9rem; }
+/* --- Landing basics (add-on) --- */
+
+/* spacing for sections */
+.section { padding: 2rem 0; }
+
+/* center the location picker */
+.location-picker {
+  margin: 1rem auto 2rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.location-picker select {
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  min-width: 200px;
+  background: #fff;
+}
+.location-picker button {
+  height: 44px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 10px;
+  background: #386641; /* deep green */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.location-picker button[disabled] { opacity: 0.55; cursor: not-allowed; }
+
+/* simple 3-card layout */
+.features {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.feature-card {
+  width: 260px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* footer spacing */
+.site-footer { margin-top: 2.5rem; padding: 1rem 0; border-top: 1px solid #eee; }
